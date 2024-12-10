@@ -73,6 +73,8 @@ return(
                 
         </section>
         <section style={{paddingTop:'2rem'}}>
+        <p style={{color:'blue',fontSize:'1.5rem',fontWeight:'bold',textAlign:'center'}}>Schedule a Time to discuss your needs!</p>
+            
             <BookAMeeting/>
         </section>
         
