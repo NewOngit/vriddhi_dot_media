@@ -2,7 +2,7 @@ const SlidingImage=({image,prev,next})=>{
 
 
     return (
-       <div>
+       <div style={{textAlign:'center'}}>
    <div className="slider">
    <div className="slides">
    <img  alt="sliding images"/>
@@ -11,8 +11,8 @@ const SlidingImage=({image,prev,next})=>{
    <p style={{textAlign:'center'}}>{image.description}</p>
    <p style={{color:'blue',textAlign:'center'}}>{image.author}</p>
    </div>
-   <div className="buttons"><button onClick={prev}> prev </button>
-   <button onClick={next}>next</button>
+   <div className="buttons"><button onClick={prev} className="sildeButton"> prev </button>
+   <button onClick={next} className="slideButton">next</button>
    </div>
    </div>
        </div>

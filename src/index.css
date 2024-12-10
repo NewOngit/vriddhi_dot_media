@@ -65,7 +65,7 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: transparent;
   }
 }
 
@@ -92,3 +92,24 @@ button:focus-visible {
   height: 3.5rem;
   width: 20rem;
 }
+
+.slides{
+  paddingTop:2rem;paddingBottom:2rem;marginTop:3rem;
+  marginBottom:3rem;
+ 
+  max-width: 90%;
+margin:auto;
+}
+
+.slider{
+  position: relative;
+  background-color: aquamarine;
+  text-align: center;
+}
+.buttons{
+  position:relative;
+  bottom:90px;
+  display: flex;
+  justify-content: space-between;
+}
+

@@ -1,7 +1,7 @@
 const Footer =()=>{
 
     return (
-        <div style={{display:"flex",justifyContent:"space-between",backgroundColor:"blue"}}>
+        <div style={{display:"flex",justifyContent:"space-between",backgroundColor:"blue",marginTop:'4rem'}}>
             <div style={{flex:'1'}}>
                 <h1 style={{color:'white',flex:'1'}}>Let’s Work Together</h1>
             <p style={{color:"white"}}>

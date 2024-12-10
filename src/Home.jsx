@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
-import image from './Second_image.png'
-const Home=()=>{
+import imageS from './Second_image.png'
+import BookAMeeting from './BookAMeeting';
+import SlidingImage from './SlidingImage';
+const Home=({image,prev,next})=>{
 return(
     <div>
         <section style={{display:"flex",jusifyContent:"center",alignItems:'center'}}>
@@ -9,7 +11,7 @@ return(
            <Link to="/https://calendly.com/rishabhnanda/30min" > <button className="btn" >
                 BOOK A MEETING</button> </Link>
             </div>
-            <img src={image} alt="second_image" style={{flex:'1.4'}}/>
+            <img src={imageS} alt="second_image" style={{flex:'1.4'}}/>
         </section>
 
     <section style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
@@ -55,7 +57,7 @@ return(
            
         </section>
 
-        <section style={{marginTop:'6rem'}}>
+        <section style={{paddingTop:'3rem',marginTop:'2rem',backgroundColor:'#f7f7f7'}}>
             <div style={{textAlign:"center"}}><p style={{color:"blue", fontSize:'2rem',fontWeight:'bold'}}>The Difference We've Made So Far</p></div>
             <div style={{display:'flex',justifyContent:'center' }}>
                 <div style={{display:'flex',width:'80%',justifyContent:'center'}}>
@@ -69,6 +71,13 @@ return(
                 </div>
 
                 
+        </section>
+        <section style={{paddingTop:'2rem'}}>
+            <BookAMeeting/>
+        </section>
+        
+        <section style={{marginTop:'3rem'}}>
+            <SlidingImage image={image} prev={prev} next={next}/>
         </section>
     </div>
 )
